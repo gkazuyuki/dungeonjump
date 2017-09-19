@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://scenes/scripts/stage.gd" type="Script" id=1]
+
+[node name="stage" type="Node2D"]
+
+process/pause_mode = 2
+script/script = ExtResource( 1 )
+
+

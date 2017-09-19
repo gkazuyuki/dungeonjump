@@ -1,0 +1,6 @@
+# Ignore binaries, assets and temporary files
+
+bin/
+assets/sound/
+assets/sprites/
+temp/

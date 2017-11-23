@@ -7,8 +7,8 @@ built on [Godot Engine](https://godotengine.org/). Art and sound made with
 **Assets**: [Google Drive](https://drive.google.com/drive/folders/0B5vbUrow_EWreXViTExCdHpfYms?usp=sharing)  
 Copy these to assets/ in the project directory
 
-Exporting to Android requires, in addition to the (export templates)[https://godotengine.org/download],
-Android SDK and a debug keystore
-\(follow [these instructions](http://docs.godotengine.org/en/stable/learning/workflow/export/exporting_for_android.html]\)\)  
+Exporting to Android requires, in addition to the [export templates](https://godotengine.org/download),
+Android SDK and a debug keystore. Refer to
+[these instructions](http://docs.godotengine.org/en/stable/learning/workflow/export/exporting_for_android.html)  
 Copy the keystore to export/ in the project directory
 

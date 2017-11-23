@@ -1,6 +1,5 @@
-# Ignore binaries, assets and temporary files
-
-bin/
+assets/font/
 assets/sound/
 assets/sprites/
 temp/
+export/

@@ -32,7 +32,7 @@ signal platform_active(platform)
 func attack():
 	var enemy_attacked
 
-	if not anima.is_playing():
+	if not (anima.is_playing() or get_tree().is_paused()):
 		anima.play("Attack")
 		sfx.play("fx_attack", true)
 		for i in attack.get_overlapping_areas():

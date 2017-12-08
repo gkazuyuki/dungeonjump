@@ -43,6 +43,7 @@ tracks/0/keys = {
 
 [node name="start" type="Node2D"]
 
+process/pause_mode = 2
 script/script = ExtResource( 1 )
 
 [node name="music" type="StreamPlayer" parent="."]

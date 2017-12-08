@@ -20,6 +20,8 @@ func on_start():
 	sfx.play("fx_start", true)
 	sfx_fired = true
 	yield(self, "sfx_finished")
+	if get_tree().is_paused():
+		get_tree().set_pause(false)
 	get_tree().change_scene_to(globals.stage)
 
 func on_quit():
@@ -45,8 +47,10 @@ func _ready():
 	start.connect("mouse_enter", self, "on_hover")
 	quit.connect("mouse_enter", self, "on_hover")
 	start.connect("pressed", self, "on_start")
-	quit.connect("pressed", self, "on_quit")
+	if globals.device == "Android":
+		quit.connect("pressed", self, "on_quit")
 
 	set_process(true)
 
 	anima.play("Idle")
+	get_tree().set_auto_accept_quit(true)

@@ -114,6 +114,10 @@ func save(val):
 func _fixed_process(d):
 	input_handler()
 
+func _notification(note):
+	if note == MainLoop.NOTIFICATION_WM_QUIT_REQUEST:
+		get_tree().change_scene_to(start)
+
 func _ready():
 	save_file = File.new()
 

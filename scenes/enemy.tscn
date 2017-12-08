@@ -116,7 +116,7 @@ default/chorus_send = 0.0
 transform/scale = Vector2( 2, 2 )
 texture = ExtResource( 3 )
 vframes = 5
-frame = 2
+frame = 1
 
 [node name="anima" type="AnimationPlayer" parent="sprite"]
 

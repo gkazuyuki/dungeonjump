@@ -87,7 +87,7 @@ func on_enemy_death():
 func on_player_cast():
 	var new_magic
 
-	if not magic_active and player.mp > 0:
+	if not (magic_active or get_tree().is_paused()) and player.mp > 0:
 		magic_active = true
 		player.mp -= 1
 		new_magic = fire.instance()
@@ -179,3 +179,5 @@ func _ready():
 	globals.connect("ui_select_press", self, "quit")
 	reset()
 	set_fixed_process(true)
+
+	get_tree().set_auto_accept_quit(false)

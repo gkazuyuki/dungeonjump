@@ -11,6 +11,12 @@ onready var sfx = get_node("sfx")
 var dspeed = 300
 var active = true
 
+func _fixed_process(d):
+	if not left_anim.is_playing():
+		left_anim.play("Idle")
+	if not right_anim.is_playing():
+		right_anim.play("Idle")
+
 func _ready():
 	left.set_gravity_scale(0)
 	right.set_gravity_scale(0)

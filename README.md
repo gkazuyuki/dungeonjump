@@ -4,7 +4,7 @@
 built on [Godot Engine](https://godotengine.org/). Art and sound made with
 [Aseprite](https://www.aseprite.org/) and [LMMS](https://lmms.io/).
 
-**Assets**: [Google Drive](https://drive.google.com/drive/folders/0B5vbUrow_EWreXViTExCdHpfYms?usp=sharing)  
+**Assets**: [Google Drive]()  
 Copy these to assets/ in the project directory
 
 Exporting to Android requires, in addition to the [export templates](https://godotengine.org/download),
